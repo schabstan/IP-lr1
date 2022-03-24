@@ -1,61 +1,69 @@
- <!doctype html>
+<!doctype html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>Фаткулин ФББ-91. Лабораторные по курсу "Интернет-программирование"</title>
+        <link rel="stylesheet" href="main.css">
     </head>
 
-    <body bgcolor="#C0C0C0">
+    <body>
 
         <header>
-            <h1><p align="center">На нашем сайте можно купить самые заряженные диски!</p></h1>
-          </header>
+            <h1>На нашем сайте можно купить самые заряженные диски!</h1>
+            <h2>Маркет. Нормальные диски</h2>
+        </header>
 
-          <hr>
+        <nav class="maim-menu">
+            <ul>
+                <li><a href=index.html>Товары</a></li>
+                <li><a href=contacts.html>Контакты</a></li>
+                <li><a href=delivery.html>Доставка</a></li>
+                <li><a href=promotions.html>Акции</a></li>
+            </ul>
+            <div class="searchbox">
+                <input type="search" placeholder="поиск по товарам">
+                <button>&#x1F50E;</button>
+            </div>
+        </nav>
 
-        <h2><p align="center">Маркет. Нормальные диски</p></h2>
-    <nav class="maim-menu">
-        <ul>
-            <li><a href=index.html>Товары</a></li>
-            <li><a href=contacts.html>Контакты</a></li>
-            <li><a href=delivery.html>Доставка</a></li>
-            <li><a href=promotions.html>Акции</a></li>
-        </ul>
-        <div class="searchbox">
-            <input type="search" placeholder="поиск по товарам">
-            <button>&#xlF50E;</button>
-        </div>
-    </nav>
+        <main>
+            <div class="card">
+                <a href="productl.html">
+                    <div class="image"><img src="Диски.jpg"></div>
+                    <div class="product-name">1. Диски amg r22 "Mercedes G"</div>
+                    <div class="price">91500 &#8381;</div>
+                </a>
+                <hr>
+                <input type="button" value="Купить">
+                <input type="number" min="1" max="16" value="4">
+            </div>
 
-    <main>
-        <div class="card">
-            <a href="productl.html">
-            <div class="image"><img src="Диски.jpg"></div>
-            <div class="product-name">1. Диски amg r22 "Mercedes G"</div>
-            <div class="price">91500 &#8381;</div>
-            </a>
-        </div>
+            <div class="card">
+                <a href="productl.html">
+                    <div class="image"><img src="Диски2.jpg"></div>
+                    <div class="product-name">2. Диски amg r20 "Mercedes GL"</div>
+                    <div class="price">76100 &#8381;</div>
+                </a>
+                <hr>
+                <input type="button" value="Купить">
+                <input type="number" min="1" max="16" value="4">
+            </div>
 
-        <div class="card">
-            <a href="productl.html">
-            <div class="image"><img src="Диски2.jpg"></div>
-            <div class="product-name">2. Диски amg r20 "Mercedes GL GLS GLE"</div>
-            <div class="price">76100 &#8381;</div>
-            </a>
-        </div>
-
-        <div class="card">
-            <a href="productl.html">
-            <div class="image"><img src="Диски3.jpg"></div>
-            <div class="product-name">3. Диски amg r18 "Mercedes C E S"</div>
-            <div class="price">64800 &#8381;</div>
-            </a>
-        </div>
-    </main>
+            <div class="card">
+                <a href="productl.html">
+                    <div class="image"><img src="Диски3.jpg"></div>
+                    <div class="product-name">3. Диски amg r18 "Mercedes C E S"</div>
+                    <div class="price">64800 &#8381;</div>
+                </a>
+                <hr>
+                <input type="button" value="Купить">
+                <input type="number" min="1" max="16" value="4">
+            </div>
+        </main>
         
         <footer>
-            <h2><p align="center">Братишка, не нашел нормальные диски себе, звони нам по номеру 8-913-228-14-88.</p></h2>
-          </footer>
+            <h2>Братишка, не нашел нормальные диски себе, звони нам по номеру 8-913-228-14-88.</h2>
+        </footer>
 
     </body>
 </html>

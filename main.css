@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+header .info{
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+header h1{
+    background-color: #B22222;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px 0 20px 15px;
+    text-align: center;
+}
+
+header h2{
+    background-color: #333;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px 0 20px 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #C0C0C0;
+    padding: 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    display: inline-block;
+    width: 200px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    transition: all 300ms;
+}
+
+nav ul li a:hover {
+    color: #B22222;
+}
+
+nav .searchbox {
+    display: inline-block;
+    padding-top: 11px;
+}
+
+nav .searchbox button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 300ms;
+}
+
+nav .searchbox button:hover{
+    opacity: 1;
+}
+
+footer {
+    padding: 25px;
+    color: #FFFFFF;
+    background-color: #333;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    color: #333;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 7px;
+    transition: all 300ms;
+}
+
+.card:hover {
+    display: inline-block;
+    width: 550px;
+    height: 650px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 7px;
+    transition: all 300ms;
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.card:hover {
+    box-shadow: 0 0 7px #FF0000;
+}
+
+.card a:hover {
+    color: #B22222;
+}
+
+.card .image {
+    height: 200px;
+}
+
+.card .image:hover {
+    height: 350px;
+}
+
+.card .image img {
+    max-width: 250px;
+    max-height: 350px;
+}
+
+.card .image img:hover {
+    max-width: 350px;
+    max-height: 450px;
+}
