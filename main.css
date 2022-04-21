@@ -146,3 +146,11 @@ main {
     max-width: 350px;
     max-height: 450px;
 }
+
+.card input[type="button"] {
+    display: none;
+}
+
+.card input[type="button"] {
+    display: none;
+}
