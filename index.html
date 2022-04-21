@@ -9,6 +9,26 @@
             console.error("Братишка, тема не зашла...");
             console.warn("Братишка, обороты снижай!");
 
+            function showButton(card) {
+                let b = card.getElementsByTagName("input")[0];
+                b.style.display="inline";
+            }
+
+            function hideButton(card) {
+                let b2 = card.getElementsByTagName("input")[0];
+                b2.style.display="none";
+            }
+            
+            function call() {
+                alert('Шартан балуй сейчас, давай позже');
+                return false;
+            }
+
+            function buy() {
+                alert('Партия скоро будет, обожди');
+                return false;
+            }
+            
             function notReadyAlert() {
                 alert('Dont be angry, everything will be fine!\nНе серчай, ща все будет!');
                 return false;
@@ -28,9 +48,21 @@
                 }
 
                 let cards = document.getElementsByClassName('card');
+                if (name == '') {
+                    cards[0].style.display = "inline-block";
+                    cards[1].style.display = "inline-block";
+                    cards[2].style.display = "inline-block";
+                }
+                else {
+                    cards[0].style.display = "none";
+                    cards[1].style.display = "none";
+                    cards[2].style.display = "none";
+                }
+
                 let card = cards[productNumber];
+                card.style.display = 'inline-block';
                 card.style.border = 'lpx dashed red';
-                card.style.backgroundColor = 'black';
+                card.style.backgroundColor = 'Grey';
 
                 setTimeout(function() {
                     card.style.border = 'none';
@@ -69,41 +101,41 @@
         </nav>
 
         <main>
-            <div class="card">
+            <div class="card" onmouseover="showButton(this)" onmouseout="hideButton(this)">
                 <a href="productl.html">
                     <div class="image"><img src="Диски.jpg"></div>
                     <div class="product-name">1. Диски amg r22 "Mercedes G"</div>
                     <div class="price">91500 &#8381;</div>
                 </a>
                 <hr>
-                <input type="button" value="Купить">
+                <input type="button" value="Купить" onclick="return buy()">
                 <input type="number" min="1" max="16" value="4">
             </div>
 
-            <div class="card">
+            <div class="card" onmouseover="showButton(this)" onmouseout="hideButton(this)">
                 <a href="productl.html">
                     <div class="image"><img src="Диски2.jpg"></div>
                     <div class="product-name">2. Диски amg r20 "Mercedes GL"</div>
                     <div class="price">76100 &#8381;</div>
                 </a>
                 <hr>
-                <input type="button" value="Купить">
+                <input type="button" value="Купить" onclick="return buy()">
                 <input type="number" min="1" max="16" value="4">
             </div>
 
-            <div class="card">
+            <div class="card" onmouseover="showButton(this)" onmouseout="hideButton(this)">
                 <a href="productl.html">
                     <div class="image"><img src="Диски3.jpg"></div>
                     <div class="product-name">3. Диски amg r18 "Mercedes C E S"</div>
                     <div class="price">64800 &#8381;</div>
                 </a>
                 <hr>
-                <input type="button" value="Купить">
+                <input type="button" value="Купить" onclick="return buy()">
                 <input type="number" min="1" max="16" value="4">
             </div>
         </main>
         
-        <footer>
+        <footer onclick="return call()">
             <h2>Братишка, не нашел нормальные диски себе, звони нам по номеру 8-913-228-14-88.</h2>
         </footer>
 
