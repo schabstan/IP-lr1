@@ -8,6 +8,11 @@
             console.log("Салама ЛЕКСУС!!!");
             console.error("Братишка, тема не зашла...");
             console.warn("Братишка, обороты снижай!");
+
+            function notReadyAlert() {
+                alert('Dont be angry, everything will be fine!\nНе серчай, ща все будет!');
+                return false;
+            }
         </script>
     </head>
 
@@ -21,9 +26,9 @@
         <nav class="maim-menu">
             <ul>
                 <li><a href=index.html>Товары</a></li>
-                <li><a href=contacts.html>Контакты</a></li>
-                <li><a href=delivery.html>Доставка</a></li>
-                <li><a href=promotions.html>Акции</a></li>
+                <li><a href="contacts.html" onclick="notReadyAlert()">Контакты</a></li>
+                <li><a href="delivery.html" onclick="notReadyAlert()">Доставка</a></li>
+                <li><a href="promotions.html" onclick="notReadyAlert()">Акции</a></li>
             </ul>
             <div class="searchbox">
                 <input type="search" placeholder="поиск по товарам">
