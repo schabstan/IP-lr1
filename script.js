@@ -1,7 +1,3 @@
-console.log("Салама ЛЕКСУС!!!");
-console.error("Братишка, тема не зашла...");
-console.warn("Братишка, обороты снижай!");
-
 function showButton(card) {
     let b = card.getElementsByTagName("input")[0];
     b.style.display="inline";
