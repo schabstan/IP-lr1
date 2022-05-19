@@ -18,8 +18,9 @@ function buy() {
     return false;
 }
 
-function notReadyAlert() {
+function notReadyAlert(event) {
     alert('Dont be angry, everything will be fine!\nНе серчай, ща все будет!');
+    event.preventDefault();
     return false;
 }
 
@@ -59,10 +60,39 @@ function search(){
     }, 2000);
 }
 
+function generateMenu() {
+    let menu = document.querySelector('nav.main-menu ul');
+    menu.innerHTML = '';
+
+    let items = [
+        {hret: 'index.html', text: 'Товары'},
+        {hret: '', text: 'Контакты'},
+        {hret: '', text: 'Доставка'},
+        {hret: '', text: 'Акции'},
+        {hret: 'about-us.html', text: 'О нас'},
+    ];
+
+    for(let i = 0; i<items.length; i++) {
+        let link = document.createElement('a');
+        link.innerText = items[i].text;
+        link.hret = items[i].href;
+        if(items[i].href == '') {
+            link.addEventListener('click', notReadyAlert);
+        }
+
+        let menuItem = document.createElement('li');
+        menuItem.appendChild(link);
+
+        menu.appendChild(menuItem);
+    }
+}
+
 function loaded() {
     let searchbox = document.getElementById('search');
     searchbox.addEventListener('keydown', function (key) {
         if(key.key == 'Enter')
             search();
     });
+
+    generateMenu();
 }
